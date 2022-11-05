@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+</head>
+<body>
+
+    <h1><samp>Mon Premier Formulaire HTML5</samp></h1>
+    <form action="">
+        <fieldset class="fieldset1">
+            <legend>Vos coordonnées</legend>
+            <table>
+            <tr>
+                <td><label class="lab1">Nom*:</label></td>
+                <td><input type="text" placeholder="votre nom" class="inp1" required></td>
+            </tr>
+            <tr>
+            <td><label class="lab1">Prénom*:</label></td>
+            <td><input type="text" placeholder="votre prénom" class="inp1" required></td>
+            </tr>
+            <tr>
+                <td><label class="lab1">Date de naissance:</label></td>
+                <td><input type="date" class="inp1" required ></td>
+            </tr>
+            <tr>
+                <td><label class="lab1">Mail:</label></td>
+                <td><input type="email" placeholder="votre mail" class="inp1" required></td>
+            </tr>
+            <tr>
+                <td><label class="lab1">Votre site:</label></td>
+                <td><input type="url" class="inp1" value="http://www."></td>
+            </tr>
+            <tr>
+                <td><label class="lab1">code</label></td>
+                <td><input type="password" maxlength="6" class="inp1" required></td>
+            </tr>
+            <tr>
+                <td class="az">Sexe:</td>
+                <td><input type="radio" name="ho"  checked class="ab">Homme</td>
+                <td><input type="radio" name="ho" class="ab">Femme</td>
+            </tr>
+            <tr>
+                <td class="az">Choisir votre pays:</td>
+                <td><select name="" id="" required>
+                    <option value="" disabled selected hidden>Votre pays</option>
+                    <optgroup label="Europe">
+                        <option value="">France</option>
+                        <option value="">Belgique</option>
+                        <option value="">Italie</option>
+                        <option value="">Allemagne</option>
+                    </optgroup>
+                    <optgroup label="Amérique">
+                        <option value="">Canada</option>
+                        <option value="">Argentine</option>
+                        <option value="">Mexique</option>
+                        <option value="">USA</option>
+                    </optgroup>
+                    <optgroup label="Autres">
+                        <option value="">Afrique</option>
+                        <option value="">Asie</option>
+                        <option value="">Océanie</option>
+                        <option value="">Australie</option>
+                    </optgroup>
+                </select></td>
+            </tr>
+            </table>
+            
+            
+            
+        </fieldset>
+        <fieldset class="fieldset2">
+            <legend>Vos goùts</legend>
+            <input type="checkbox" name="" id="">Pommes<br>
+            <input type="checkbox" name="" id="">Poires<br>
+            <input type="checkbox" name="" id="">Scoubidous<br>
+            <textarea name="" id="" cols="50" rows="5" placeholder="Décrivez vos goùts en détail"></textarea>
+        </fieldset>
+        <fieldset class="fieldset3">
+            <legend>Envoyez nous vous photo</legend>
+            <input type="file" class="inp3"><br>
+            <input type="reset" value="Effacer" class="reset1">
+            <input type="submit" value="Envoyez" class="submit1">
+        </fieldset>
+    </form>
+
+</body>
+</html>
